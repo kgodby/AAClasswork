@@ -1,0 +1,46 @@
+div {
+
+}
+
+#first-div {
+  background-color: #39cccc;
+  padding: 50px;
+  border: 5px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+#second-div {
+  background-color: #ff4136;
+  padding: 50px;
+  border: 5px solid black;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+}
+
+#third-div {
+  min-height: 10px;
+  min-width: 10px;
+  max-height: 1000px;
+  max-width: 1000px;
+  background-color: orange;
+}
+
+#fourth-div {
+  width: 200px;
+  height: 600px;
+  background-color: purple;
+}
+
+.image-2-container {
+  min-width: 200px;
+  /* max-width: 500px; */
+  height: 600px;
+  background-color: purple;
+}
+
+p {
+  background-color: #7fdbff;
+}
+
