@@ -14,6 +14,12 @@ class LRUCache
   end
 
   def get(key)
+    
+    @store.append(key, @prc.call(key))
+    @store
+    @store.last
+    @map.set(key, @prc.call(key)) unless @map.include?(key)
+ 
   end
 
   def to_s
@@ -23,11 +29,13 @@ class LRUCache
   private
 
   def calc!(key)
+
     # suggested helper method; insert an (un-cached) key
   end
 
   def update_node!(node)
     # suggested helper method; move a node to the end of the list
+    
   end
 
   def eject!

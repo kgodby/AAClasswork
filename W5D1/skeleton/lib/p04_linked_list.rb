@@ -16,8 +16,10 @@ class Node
   def remove
     # optional but useful, connects previous link to next link
     # and removes self from list.
+    
     @prev.next = @next
     @next.prev = @prev
+ 
   end
 end
 
@@ -83,7 +85,7 @@ class LinkedList
   def remove(key)
     self.each do |node|
       if node.key == key
-        node.remove
+       node.remove
       end
     end
   end
